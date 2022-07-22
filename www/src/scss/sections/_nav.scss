@@ -1,0 +1,31 @@
+nav {
+  ul {
+    align-items: baseline;
+    display: flex;
+    padding: 0;
+    margin-bottom: 11px;
+
+    li {
+      list-style: none;
+      font-size: 1.05em;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5em .5em;
+        transition: ease-in-out .1s;
+        margin: 0 1rem;
+
+        &:hover {
+          border-bottom: 3px solid #40a1da;
+        }
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+}

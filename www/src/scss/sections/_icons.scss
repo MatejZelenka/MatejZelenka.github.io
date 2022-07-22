@@ -1,0 +1,31 @@
+.icons {
+  .fa-chalkboard-user {
+    color: #40a1da;
+  }
+
+  .fa-graduation-cap {
+    color: #afd137;
+  }
+  .fa-school {
+    color: #f9cb1a;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+
+    &.rotate {
+      svg {
+        transition: ease-in-out .2s;
+
+        &:hover {
+          transform: scale(1.07) rotate(7deg);
+        }
+      }
+    }
+
+    svg {
+      margin-bottom: 1rem;
+    }
+  }
+}
