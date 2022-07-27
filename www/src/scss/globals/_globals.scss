@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  height: 2000px;
-  margin: 0.75rem 0;
+  margin: 0;
   position: relative;
 }
 
@@ -17,20 +16,28 @@ a {
   color: #343434;
 }
 
-footer {
-  bottom: 0;
-  background-color: #dd5f1314;
-  padding: 4rem 0;
-  position: absolute;
-  width: 100%;
-}
-
 .text-center {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-green {
   color: #afd137;
+}
+
+.text-blue {
+  color: #40a1da;
+}
+
+.text-yellow {
+  color: #f9cb1a;
 }
 
 .bold {
@@ -39,6 +46,12 @@ footer {
 
 .container, .container-fluid {
   padding: 0;
+}
+
+.district {
+  img {
+    max-height: 200px;
+  }
 }
 
 #background {
