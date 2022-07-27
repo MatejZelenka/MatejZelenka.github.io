@@ -1,14 +1,18 @@
 footer {
-  background-color: #f9b000;
+  background-color: $tertary-color;
   padding: 4rem 0;
   width: 100%;
-  color: #fdefcc;
+  color: $footer-text;
+
+  .logo {
+    max-width: 75px;
+  }
 
   a {
-    color: #fdefcc;
+    color: $footer-text;
   }
 
   .fa-facebook, .fa-instagram, .fa-phone, .fa-location-dot, .fa-at {
-    color: #fdefcc;
+    color: $footer-text;
   }
 }

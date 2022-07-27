@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #343434;
+  color: $link-color;
 }
 
 .text-center {
@@ -29,15 +29,15 @@ a {
 }
 
 .text-green {
-  color: #afd137;
+  color: $secondary-color;
 }
 
 .text-blue {
-  color: #40a1da;
+  color: $primary-color;
 }
 
 .text-yellow {
-  color: #f9cb1a;
+  color: $tertary-color;
 }
 
 .bold {

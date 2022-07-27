@@ -1,23 +1,23 @@
 .gray-section {
-  background-color: #f6f6f5;
+  background-color: $gray;
 }
 
 .icons {
   .fa-chalkboard-user, .fa-graduation-cap, .fa-school {
     border-radius: 50%;
-    color: white;
+    color: $white;
     padding: 2.5rem;
   }
 
   .fa-chalkboard-user {
-    background-color: #40a1da;
+    background-color: $primary-color;
   }
 
   .fa-graduation-cap {
-    background-color: #afd137;
+    background-color: $secondary-color;
   }
   .fa-school {
-    background-color: #f9cb1a;
+    background-color: $tertary-color;
   }
 
   a {
