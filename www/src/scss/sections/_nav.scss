@@ -20,12 +20,12 @@ nav {
       a {
         text-decoration: none;
         text-transform: uppercase;
-        padding: .5em .5em;
+        padding: .5rem .5rem;
         transition: ease-in-out .1s;
         margin: 0 1rem;
 
         &:hover {
-          border-bottom: 3px solid $primary-color;
+          border-bottom: 3px solid $secondary-color;
         }
       }
 
@@ -33,6 +33,37 @@ nav {
         height: auto;
         width: 100%;
         max-width: 100px;
+      }
+    }
+  }
+}
+
+#sub-nav {
+  background-color: $primary-color;
+  margin-top: .8rem;
+
+  ul {
+    margin: .5rem;
+    padding: 1rem;
+    text-align: center;
+
+    li {
+      list-style: none;
+
+      a {
+        color: $white;
+        margin: 1rem 3rem;
+        transition: ease-in-out .1s;
+        padding: .25rem .25rem;
+
+        &:hover {
+          border-bottom: 2px solid $white;
+        }
+
+        &.active {
+          font-weight: bold;
+          border-bottom: 2px solid $white;
+        }
       }
     }
   }
