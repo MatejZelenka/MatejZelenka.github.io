@@ -1,0 +1,9 @@
+.fotogalery {
+  img {
+    border-radius: 50%;
+
+    &.fotogalery-img {
+      max-height: 200px;
+    }
+  }
+}

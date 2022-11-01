@@ -33,6 +33,11 @@ nav {
         &:hover {
           border-bottom: 3px solid $secondary-color;
         }
+
+        &.active {
+          border-bottom: 3px solid $secondary-color;
+          font-weight: bold;
+        }
       }
 
       img {

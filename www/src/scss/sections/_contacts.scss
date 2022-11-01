@@ -1,0 +1,28 @@
+.contacts {
+
+  h4 {
+    color: $tertiary-color;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: underline !important;
+  }
+
+  article {
+    padding-left: 1rem;
+
+    &.odd {
+      border-left: 2px solid $secondary-color;
+    }
+
+    &.even {
+      border-left: 2px solid $primary-color;
+    }
+  }
+
+  .news-logo {
+    border-radius: 50%;
+    max-height: 200px;
+  }
+}
