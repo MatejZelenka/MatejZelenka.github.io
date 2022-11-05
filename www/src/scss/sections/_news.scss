@@ -1,5 +1,4 @@
 .news {
-
   h4 {
     color: $tertiary-color;
     font-style: italic;
@@ -18,7 +17,6 @@
   }
 
   .news-logo {
-    border-radius: 50%;
-    max-height: 200px;
+    max-width: 200px;
   }
 }

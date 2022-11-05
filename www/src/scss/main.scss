@@ -1,16 +1,21 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
 
-@import "globals/variables";
+@import 'globals/variables';
 
-@import "globals/images";
-@import "globals/globals";
+@import 'components/boxes';
+@import 'components/buttons';
+@import 'components/form';
 
-@import "sections/contacts";
-@import "sections/footer";
-@import "sections/fotogalery";
-@import "sections/icons";
-@import "sections/nav";
-@import "sections/news";
+@import 'globals/images';
+@import 'globals/globals';
+@import 'globals/stripes';
+
+@import 'sections/contacts';
+@import 'sections/footer';
+@import 'sections/fotogalery';
+@import 'sections/icons';
+@import 'sections/nav';
+@import 'sections/news';
