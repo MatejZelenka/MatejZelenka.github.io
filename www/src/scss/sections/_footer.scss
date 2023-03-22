@@ -1,8 +1,10 @@
 footer {
   background-color: $tertiary-color;
-  padding: 2rem 0;
-  width: 100%;
+  bottom: 0;
   color: $footer-text;
+  padding: 2rem 0;
+  position: absolute;
+  width: 100%;
 
   .logo {
     max-width: 75px;
@@ -10,6 +12,10 @@ footer {
 
   a {
     color: $footer-text;
+
+    &:visited {
+      color: $footer-text;
+    }
   }
 
   .fa-facebook,

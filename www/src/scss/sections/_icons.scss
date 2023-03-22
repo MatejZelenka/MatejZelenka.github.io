@@ -29,12 +29,16 @@
     &.rotate {
       svg {
         transition: ease-in-out 0.2s;
+      }
 
-        &:hover {
+      &:hover {
+        svg {
           transform: scale(1.07) rotate(7deg);
         }
       }
     }
+
+    
 
     svg {
       margin-bottom: 1rem;

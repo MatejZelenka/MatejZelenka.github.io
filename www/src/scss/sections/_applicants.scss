@@ -1,0 +1,23 @@
+.for-applicants {
+  section {
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+    &.odd {
+      border-left: 2px solid $secondary-color;
+    }
+
+    &.even {
+      border-left: 2px solid $primary-color;
+    }
+  }
+
+  a {
+    color: $secondary-color;
+    text-decoration: underline;
+
+    &:visited {
+      color: $link-visited;
+    }
+  }
+}
