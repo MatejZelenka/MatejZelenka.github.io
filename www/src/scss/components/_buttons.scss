@@ -12,8 +12,8 @@
     border-color: $tertiary-color;
 
     &:hover {
-      background-color: #fcc43e;
-      border-color: #fcc43eff;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
     }
   }
 }

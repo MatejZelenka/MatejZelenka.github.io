@@ -1,13 +1,25 @@
 function burgerMenuToggle() {
   const burger = document.querySelector('.burger')
   const mobileMenu = document.querySelector('.mobile-menu')
-  const ul = document.querySelector('.navigation')
+  const body = document.querySelector('body');
+
 
   burger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('shown')
-    ul.classList.toggle('mb-0')
-    burger.classList.toggle('open')
+    mobileMenu.classList.toggle('shown');
+    burger.classList.toggle('open');
+    body.classList.toggle("disable-scroll");
   })
 }
 
-burgerMenuToggle()
+function scrollResizeMenu() {
+  const menu = document.querySelector("header");
+
+  window.addEventListener('scroll', () => {
+    (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+      ? menu.style.borderBottom = `1px solid #35537b`
+      : menu.style.borderBottom = "0px";
+  })
+}
+
+burgerMenuToggle();
+scrollResizeMenu();

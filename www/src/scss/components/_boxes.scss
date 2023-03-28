@@ -3,30 +3,26 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2px;
 
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
   &.primary {
     background-color: $primary-color;
     color: white;
 
-    a {
-      color: white;
-    }
   }
 
   &.secondary {
     background-color: $secondary-color;
     color: white;
 
-    a {
-      color: white;
-    }
   }
 
   &.tertiary {
     background-color: $tertiary-color;
     color: white;
 
-    a {
-      color: white;
-    }
   }
 }
