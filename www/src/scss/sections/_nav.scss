@@ -2,7 +2,7 @@ header {
   background-color: white;
   min-width: available;
   min-width: -moz-available;
-  padding: .75rem 1rem 1rem 0 !important;
+  padding: .75rem 0 1rem !important;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -34,6 +34,7 @@ nav {
         display: none;
         margin: 0;
         padding: .5rem 1.5rem;
+        position: relative;
 
         &.open {
           padding-bottom: 1.5rem;
@@ -55,15 +56,21 @@ nav {
 
             &:last-child {
               transform: rotate(-45deg);
+              top: 8px;
             }
           }
         }
-
+        
         .line {
           background-color: black;
           height: 0.25rem;
           margin-bottom: 0.25rem;
           width: 1.5rem;
+          
+          &:last-child {
+            position: absolute;
+            top: 0;
+          }
         }
 
         &:hover {
@@ -80,36 +87,48 @@ nav {
       visibility: collapse;
 
       &.shown {
-        background-color: $gray;
+        background-color: $primary-color;
         display: block;
         height: 85vh;
         opacity: 100;
         visibility: visible;
-
+        
         li {
           position: relative;
           width: 100%;
-
+          
           a {
+            color: $white;
             display: inline-block;
-            height: 45px;
-            line-height: 45px;
+            height: 23px;
+            line-height: 23px;
             padding-left: 1rem;
             width: 100%;
             white-space: nowrap;
 
             &:after {
-              background: black;
+              box-shadow: 2px 2px 2px rgba(255, 254, 254, 0.05);
               bottom: 0;
               content: "";
               height: 2px;
-              left: 25%;
+              left: 5%;
               position: absolute;
-              width: 50%;
+              width: 89%;
             }
 
-            &:hover, :active {
+            &:visited {
+              color: $white;
+            }
+
+            &:hover,
+            :active {
               border-bottom: none;
+            }
+          }
+
+          &:last-child a {
+            &:after {
+              width: 0;
             }
           }
         }
@@ -154,6 +173,8 @@ nav {
 #sub-nav {
   background-color: $primary-color;
   margin-top: 0.7rem;
+  position: sticky;
+  top: 112px;
 
   ul {
     display: flex;
