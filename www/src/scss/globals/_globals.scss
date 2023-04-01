@@ -86,8 +86,19 @@ a {
   height: 300px;
 }
 
+
+@include media-breakpoint-down(lg) {
+  main {
+    margin-top: 93px;
+  }
+}
+
 @include media-breakpoint-down(md) {
   .row {
     margin: 0 0.5rem;
+  }
+
+  main {
+    margin-top: 88px;
   }
 }

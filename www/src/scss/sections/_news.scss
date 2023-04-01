@@ -25,6 +25,8 @@
 @include media-breakpoint-down(lg) {
   .news {
     article {
+      padding-left: 0;
+
       &.odd {
         border-left: none;
         border-top: 2px solid $secondary-color;

@@ -23,3 +23,10 @@ function scrollResizeMenu() {
 
 burgerMenuToggle();
 scrollResizeMenu();
+
+
+const goBack = () => {
+  window.location.goBack()
+}
+
+export default goBack();

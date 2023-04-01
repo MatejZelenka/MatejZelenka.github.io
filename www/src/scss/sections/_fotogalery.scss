@@ -1,6 +1,7 @@
 .fotogalery {
   img {
     border-radius: 50%;
+    object-fit: cover;
 
     &.fotogalery-img {
       height: 300px;

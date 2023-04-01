@@ -29,6 +29,8 @@
 @include media-breakpoint-down(lg) {
   .our-team {
     article {
+      padding-left: 0;
+      
       &.odd {
         border-left: none;
         border-top: 2px solid $secondary-color;

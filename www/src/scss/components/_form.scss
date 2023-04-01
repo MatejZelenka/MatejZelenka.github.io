@@ -49,4 +49,8 @@ form {
   button {
     color: $white;
   }
+
+  input:required:valid {
+    border-color: green;
+  }
 }
