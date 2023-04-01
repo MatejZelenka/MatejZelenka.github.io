@@ -1,4 +1,4 @@
-.contacts {
+.our-team {
   h4 {
     color: $tertiary-color;
   }
@@ -23,5 +23,27 @@
   .news-logo {
     border-radius: 50%;
     max-height: 200px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .our-team {
+    article {
+      padding-left: 0;
+      
+      &.odd {
+        border-left: none;
+        border-top: 2px solid $secondary-color;
+      }
+
+      &.even {
+        border-left: none;
+        border-top: 2px solid $primary-color;
+      }
+
+    p {
+      margin-bottom: 3rem;
+    }
+    }
   }
 }

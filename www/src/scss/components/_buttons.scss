@@ -1,19 +1,39 @@
 .btn {
   border-radius: 4px;
   display: block;
-  margin-left: auto;
+  font-size: 1rem;
   padding: 0.75rem 1.5rem;
   transition: ease-in-out;
   transition-duration: 0.2s;
   -webkit-user-select: none;
-
+  
   &.btn-primary {
-    background-color: $tertiary-color;
-    border-color: $tertiary-color;
-
+    background-color: $primary-color;
+    border-color: $primary-color;
+    margin-left: auto;
+    
     &:hover {
-      background-color: #fcc43e;
-      border-color: #fcc43eff;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+  
+  &.btn-back {
+    background-color: $white;
+    border-color: $primary-color;
+    margin: 0 auto;
+
+    .fa-arrow-left {
+      color: $black;
+    }
+    
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+
+      .fa-arrow-left {
+        color: $white;
+      }
     }
   }
 }

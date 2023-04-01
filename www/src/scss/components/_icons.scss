@@ -38,10 +38,16 @@
       }
     }
 
-    
-
     svg {
       margin-bottom: 1rem;
     }
   }
+}
+
+.fa-bullhorn, .fa-file-pen {
+  color: $primary-color;
+}
+
+.fa-calendar {
+  color: $secondary-color;
 }

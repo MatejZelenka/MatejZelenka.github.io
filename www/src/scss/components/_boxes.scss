@@ -1,32 +1,33 @@
-.box {
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2px;
-
-  &.primary {
-    background-color: $primary-color;
-    color: white;
-
+.boxes {
+  
+  .box {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 2px;
+    min-height: 125px;
+    padding: 1rem;
+  
     a {
       color: white;
+      text-decoration: underline;
     }
-  }
-
-  &.secondary {
-    background-color: $secondary-color;
-    color: white;
-
-    a {
+  
+    &.primary {
+      background-color: $primary-color;
       color: white;
+  
     }
-  }
-
-  &.tertiary {
-    background-color: $tertiary-color;
-    color: white;
-
-    a {
+  
+    &.secondary {
+      background-color: $secondary-color;
       color: white;
+  
+    }
+  
+    &.tertiary {
+      background-color: $tertiary-color;
+      color: white;
+  
     }
   }
 }
+

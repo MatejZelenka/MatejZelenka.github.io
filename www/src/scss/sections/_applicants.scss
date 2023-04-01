@@ -1,14 +1,17 @@
-.for-applicants {
-  section {
+section {
+  &.for-applicants {
     margin-top: 1rem;
-    padding-left: 1rem;
 
-    &.odd {
-      border-left: 2px solid $secondary-color;
-    }
+    article {
+      padding-left: 1rem;
 
-    &.even {
-      border-left: 2px solid $primary-color;
+      &.odd {
+        border-left: 2px solid $secondary-color;
+      }
+
+      &.even {
+        border-left: 2px solid $primary-color;
+      }
     }
   }
 
@@ -18,6 +21,28 @@
 
     &:visited {
       color: $link-visited;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  section.for-applicants {
+    article {
+      padding-left: 0;
+
+      &.odd {
+        border-left: none;
+        border-top: 2px solid $secondary-color;
+      }
+
+      &.even {
+        border-left: none;
+        border-top: 2px solid $primary-color;
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
     }
   }
 }
