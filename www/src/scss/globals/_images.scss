@@ -1,0 +1,19 @@
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+  &.pardubice-img,
+  &.upol-img {
+    max-height: 200px;
+  }
+
+  &.upol-img {
+    box-shadow: 1px 1px 5px;
+  }
+
+  &.portal-img {
+    max-height: 150px;
+    max-width: 200px;
+  }
+}
