@@ -81,12 +81,6 @@ a {
   height: 100vh;
 }
 
-#background {
-  background-image: url('../assets/claim-index.jpg');
-  height: 300px;
-}
-
-
 @include media-breakpoint-down(lg) {
   main {
     margin-top: 93px;

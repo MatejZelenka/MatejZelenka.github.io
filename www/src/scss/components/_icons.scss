@@ -6,9 +6,11 @@
   .fa-chalkboard-user,
   .fa-graduation-cap,
   .fa-school {
-    border-radius: 50%;
+    border-radius: 18%;
     color: $white;
     padding: 2.5rem;
+    height: 75px;
+    vertical-align: middle;
   }
 
   .fa-chalkboard-user {
@@ -46,12 +48,17 @@
 
 .fa-bullhorn, .fa-file-pen {
   color: $primary-color;
+  height: 100px;
+  vertical-align: middle;
 }
 
 .fa-calendar {
   color: $secondary-color;
+  height: 100px;
+  vertical-align: middle;
 }
 
-.fa-facebook:before {
-  content: "\f09a";
+.fa-circle-user {
+  height: 150px;
+  vertical-align: middle;
 }

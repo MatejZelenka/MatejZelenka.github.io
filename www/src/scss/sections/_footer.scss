@@ -22,7 +22,9 @@ footer {
   .fa-instagram,
   .fa-phone,
   .fa-location-dot,
-  .fa-at {
+  .fa-comment {
     color: $footer-text;
+    height: 35px;
+    vertical-align: middle;
   }
 }

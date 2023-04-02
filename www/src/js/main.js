@@ -1,8 +1,11 @@
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
-
+// import '@fortawesome/fontawesome-free/js/fontawesome'
+// import '@fortawesome/fontawesome-free/js/solid'
+// import '@fortawesome/fontawesome-free/js/regular'
+// import '@fortawesome/fontawesome-free/js/brands'
+import Swiper, {Navigation, Pagination, Autoplay} from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function burgerMenuToggle() {
   const burger = document.querySelector('.burger')
@@ -30,6 +33,31 @@ function scrollResizeMenu() {
       : menu.style.borderBottom = "0px";
   })
 }
+
+const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination, Autoplay],
+  autoplay: {delay: 5000},
+  direction: 'horizontal',
+  initialSlide: 0,
+  loop: true,
+  speed: 1500,
+  slidesPerView: 1,
+  spaceBetween: 5,
+  pagination: {
+    clickable: true,
+    el: '.swiper-pagination',
+    type: "bullets",
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 burgerMenuToggle();
 scrollResizeMenu();
