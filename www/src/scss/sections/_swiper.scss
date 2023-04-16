@@ -31,9 +31,14 @@
 }
 
 .swiper-slide {
-  background-size: cover;
-  min-height: 60vh;
-  background-position: center center;
+  height: 60vh !important;
+
+  img {
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+    max-width: 100%;
+  }
 }
 
 @include media-breakpoint-down(lg) {
